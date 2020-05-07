@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>嘉和日盛装饰</title>
+		<link rel="stylesheet" href="./js/layui/css/layui.css">
+		<link rel="stylesheet" href="./css/swiper.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<!-- 头部区域 -->
+		<div class="header">
+			<div class="w innerheader clearfix">
+				<span class="fl">欢迎进入嘉和日盛装饰</span>
+				<span class="fr">咨询热线：028-86868686</span>
+			</div>
+		</div>
+		<div class="header-logo">
+			<div class="w clearfix">
+				<div class="l-logo fl">
+					<a href="#">
+						<img src="./images/logo.png" alt="">
+					</a>
+				</div>
+
+				<div class="r-tel-area fr">
+					<img src="./images/tel-icon.png" alt="" class="fl">
+					<div class="fl l-teltxt">
+						<p class="hot-tel">免费咨询服务热线</p>
+						<p class="tel-num">186-1245-0000</p>
+					</div>
+				</div>
+				<div class="r-list-service fr">
+					<ul class="clearfix">
+						<li>
+							<img src="./images/z-icon.png" alt="">
+							<p>匠心质量</p>
+						</li>
+						<li>
+							<img src="./images/l-icon.png" alt="">
+							<p>零增值服务</p>
+						</li>
+						<li>
+							<img src="./images/h-icon.png" alt="">
+							<p>环保承诺</p>
+						</li>
+						<li>
+							<img src="./images/e-icon.png" alt="">
+							<p>24小时服务</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-nav">
+			<div class="w">
+				<ul class="clearfix">
+					<li>
+						<a href="" class="nav-active nav-title">公司首页</a>
+					</li>
+					<li>
+						<a href="" class="nav-title">装修案例</a>
+						<div class="second-menu">
+							<a href="#">精品案例</a>
+							<a href="#">VR案例</a>
+						</div>
+					</li>
+					<li>
+						<a href="" class="nav-title">设计团队</a>
+					</li>
+					<li>
+						<a href="" class="nav-title">整装产品</a>
+					</li>
+					<li>
+						<a href="" class="nav-title">装修套餐</a>
+					</li>
+					<li>
+						<a href="" class="nav-title">装修攻略</a>
+					</li>
+					<li>
+						<a href="" class="nav-title">联系我们</a>
+					</li>
+					<li>
+						<a href="" class="nav-title">装修报价</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 轮播区域 -->
+		<div class="banner">
+			<div class="layui-carousel" id="test1">
+				<div carousel-item>
+					<div>
+						<a href="">
+							<img src="./images/banner.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img src="./images/banner.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 装修公司算价 -->
+		<div class="section-1">
+			<div class="w clearfix">
+				<div class="l-section fl">
+					<a href="" class="s-icon">
+						<i class="iconfont">&#xe604;</i>
+						<p>0元设计</p>
+					</a>
+					<a href="" class="s-icon">
+						<i class="iconfont">&#xe68c;</i>
+						<p>环保承诺</p>
+					</a>
+					<a href="" class="s-icon">
+						<i class="iconfont">&#xe621;</i>
+						<p>装修案例</p>
+					</a>
+					<a href="" class="s-icon">
+						<i class="iconfont">&#xe715;</i>
+						<p>装修报价</p>
+					</a>
+				</div>
+				<div class="main-content-s1 fl">
+					<div class="m-title">
+						<h3>算一算我家装修需要多少钱？</h3>
+						<p>快速填写表单获取报价！</p>
+					</div>
+					<form class="layui-form jsform" action="">
+						<div class="layui-form-item shi">
+							<select name="shi" lay-verify="required">
+								<option value="0">一室</option>
+								<option value="1">二室</option>
+								<option value="2">三室</option>
+								<option value="3">四室</option>
+								<option value="4">五室</option>
+								<option value="5">六室</option>
+							</select>
+						</div>
+						<div class="layui-form-item ting">
+							<select name="ting" lay-verify="required">
+								<option value="0">一厅</option>
+								<option value="1">二厅</option>
+								<option value="2">三厅</option>
+							</select>
+						</div>
+						<div class="layui-form-item wei">
+							<select name="wei" lay-verify="required">
+								<option value="0">一卫</option>
+								<option value="1">二卫</option>
+								<option value="2">三卫</option>
+								<option value="3">四卫</option>
+							</select>
+						</div>
+						<div class="layui-form-item userinfo">
+						     <input type="text" name="name" required  lay-verify="required" placeholder="请输入您的姓名" autocomplete="off" class="layui-input">
+							 <input type="text" name="phone" required  lay-verify="required" placeholder="请输入您的手机号" autocomplete="off" class="layui-input">
+						</div>
+						<div class="layui-form-item userinfo">
+						     <input type="text" name="area" required  lay-verify="required" placeholder="请输入您的房屋面积" autocomplete="off" class="layui-input">
+							 <button class="layui-btn jsbtn" lay-submit lay-filter="formDemo">立即提交</button>
+						</div>
+					</form>
+				</div>
+				<div class="jzys fl">
+					<div class="jzys-01">
+						<span class="jzys-t1">您的家装预算</span>
+						<span class="price-01">83854</span>
+						<span class="rmb-01">元</span>
+					</div>
+					<div class="jzys-02 jzs">
+						<span class="jzys-t2">材料费</span>
+						<span class="price-02">83854</span>
+						<span class="rmb-02">元</span>
+					</div>
+					<div class="jzys-03 jzs">
+						<span class="jzys-t2">人工费</span>
+						<span class="price-02">83854</span>
+						<span class="rmb-02">元</span>
+					</div>
+					<div class="jzys-04 jzs">
+						<span class="jzys-t2">设计费</span>
+						<span class="price-02">83854</span>
+						<span class="rmb-02">元</span>
+					</div>
+					<div class="jzys-05 jzs">
+						<span class="jzys-t2">管理费</span>
+						<span class="price-02">83854</span>
+						<span class="rmb-02">元</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 整装产品 -->
+		<div class="section-2">
+			<div class="w">
+				<div class="sect-title clearfix">
+					<div class="l-title fl">
+						<h3>整装产品</h3>
+						<span>Domestic outfit product</span>
+					</div>
+					<div class="r-title fr">
+						<span>品质装修+定制家居+窗帘+壁纸+灯具</span>
+					</div>
+				</div>
+				<div class="zzbanner">
+					<a href="#">
+						<img src="./images/zz-banner.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 套餐产品 -->
+		<div class="section-2">
+			<div class="w">
+				<div class="sect-title clearfix">
+					<div class="l-title fl">
+						<h3>装修套餐</h3>
+						<span>Decorate a package</span>
+					</div>
+					<div class="r-title fr">
+						<span>品质装修+定制家居+窗帘+壁纸+灯具</span>
+					</div>
+				</div>
+				<div class="tccp-sec">
+					<div class="tccp-item">
+						<div class="l-tccp-item fl">
+							<img src="./images/tc_left1.jpg" alt="">
+							<a href="" class="tc-ckgd">查看详情</a>
+						</div>
+						<div class="r-tccp-item fr">
+							<ul>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tccp-item">
+						<div class="l-tccp-item fl">
+							<img src="./images/tc_left2.jpg" alt="">
+							<a href="" class="tc-ckgd">查看详情</a>
+						</div>
+						<div class="r-tccp-item fr">
+							<ul>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tccp-item">
+						<div class="l-tccp-item fl">
+							<img src="./images/tc_left3.jpg" alt="">
+							<a href="" class="tc-ckgd">查看详情</a>
+						</div>
+						<div class="r-tccp-item fr">
+							<ul>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-a">
+										<img src="./upload/tcimg.png" alt="">
+										<div class="btn-zj">
+											<p>蓝城兰园&nbsp;&nbsp;&nbsp;&nbsp;155m²&nbsp;&nbsp;&nbsp;&nbsp;简美风格</p>
+										</div>
+										<div class="zj-icon">
+											<span>造价:30万</span>
+										</div>
+										<div class="zj-mask">
+											<div class="mask-content">
+												<p class="estatename">成都雄飞生活广场</p>
+												<div class="area-style">
+													<span class="jz-area">200㎡</span>
+													<span class="jz-style">新中式</span>
+												</div>
+												<div class="estatstyle">
+													<span class="estatsprice">造价:30万</span>
+													<p>我要咨询</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- VR产品 -->
+		<div class="section-3">
+			<div class="w">
+				<div class="sect-title clearfix">
+					<div class="l-title fl">
+						<h3>装修套餐</h3>
+						<span>Decorate a package</span>
+					</div>
+					<div class="r-title fr">
+						<span>品质装修+定制家居+窗帘+壁纸+灯具</span>
+					</div>
+				</div>
+				<div class="top-vr">
+					<a href="">
+						<img src="./upload/vr-pic.png" alt="">
+					</a>
+				</div>
+				<div class="bot-vr">
+					<ul class="clearfix">
+						<li>
+							<a href="#">
+								<img src="./upload/vr-01.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./upload/vr-02.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./upload/vr-03.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 成功案例 -->
+		<div class="section-4">
+			<div class="w">
+				<div class="sect-title clearfix">
+					<div class="l-title fl">
+						<h3>成功案例</h3>
+						<span>SUCCESS CASE</span>
+					</div>
+					<div class="r-title fr">
+						<a href="#">店铺装修</a>
+						<span>|</span>
+						<a href="#">店铺装修</a>
+						<span>|</span>
+						<a href="#">店铺装修</a>
+						<span>|</span>
+						<a href="#">店铺装修</a>
+						<span>|</span>
+						<a href="#">店铺装修</a>
+						<span>|</span>
+						<a href="#">查看更多>></a>
+					</div>
+				</div>
+				<div class="section-4-content">
+					<div class="section-4-top">
+						<div class="swiper-container swiper-case">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide">
+									<div class="sect-l-img fl">
+										<img src="./images/s-case.png" alt="">
+									</div>
+									<div class="sect-r-c fr">
+										<div class="sect-c-title">
+											<a href="#">成都办公室写字楼室内设计</a>
+										</div>
+										<div class="sect-c-desc">
+											<p>江与城项目毗邻江湾，风景秀丽，且有3大公园相邻，推出1800亩低密度高端住宅，7年城熟即买即享。江与城是两江新区都市区中占地面积广、规划完整的滨江低密度国际大社区，整体项目依江而建，背靠照母山，远眺歌乐山，周边环绕着三大主题公园。</p>
+										</div>
+									</div>
+								</div>
+						        <div class="swiper-slide">
+									<div class="sect-l-img fl">
+										<img src="./images/s-case.png" alt="">
+									</div>
+									<div class="sect-r-c fr">
+										<div class="sect-c-title">
+											<a href="#">成都办公室写字楼室内设计</a>
+										</div>
+										<div class="sect-c-desc">
+											<p>江与城项目毗邻江湾，风景秀丽，且有3大公园相邻，推出1800亩低密度高端住宅，7年城熟即买即享。江与城是两江新区都市区中占地面积广、规划完整的滨江低密度国际大社区，整体项目依江而建，背靠照母山，远眺歌乐山，周边环绕着三大主题公园。</p>
+										</div>
+									</div>
+								</div>
+						        <div class="swiper-slide">
+									<div class="sect-l-img fl">
+										<img src="./images/s-case.png" alt="">
+									</div>
+									<div class="sect-r-c fr">
+										<div class="sect-c-title">
+											<a href="#">成都办公室写字楼室内设计</a>
+										</div>
+										<div class="sect-c-desc">
+											<p>江与城项目毗邻江湾，风景秀丽，且有3大公园相邻，推出1800亩低密度高端住宅，7年城熟即买即享。江与城是两江新区都市区中占地面积广、规划完整的滨江低密度国际大社区，整体项目依江而建，背靠照母山，远眺歌乐山，周边环绕着三大主题公园。</p>
+										</div>
+									</div>
+								</div>
+						    </div> 
+						    <!-- 如果需要导航按钮 -->
+						    <div class="swiper-button-prev swiper-button-prev-case">
+								<i class="iconfont">&#xe61c;</i>
+							</div>
+						    <div class="swiper-button-next swiper-button-next-case">
+								<i class="iconfont">&#xe716;</i>
+							</div>
+						</div>
+					</div>
+					<div class="section-4-list">
+						<ul class="clearfix">
+							<li>
+								<a href="#">
+									<div class="case-s-img">
+										<img src="./upload/case1.png" alt="">
+									</div>
+									<div class="case-s-desc">
+										<p class="ellipsis">中心办公室装修案例</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="case-s-img">
+										<img src="./upload/case-4.png" alt="">
+									</div>
+									<div class="case-s-desc">
+										<p class="ellipsis">中心办公室装修案例</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="case-s-img">
+										<img src="./upload/case-4.png" alt="">
+									</div>
+									<div class="case-s-desc">
+										<p class="ellipsis">中心办公室装修案例</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="case-s-img">
+										<img src="./upload/case-5.png" alt="">
+									</div>
+									<div class="case-s-desc">
+										<p class="ellipsis">中心办公室装修案例</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="case-s-img">
+										<img src="./upload/case1.png" alt="">
+									</div>
+									<div class="case-s-desc">
+										<p class="ellipsis">中心办公室装修案例</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="case-s-img">
+										<img src="./upload/case-2.png" alt="">
+									</div>
+									<div class="case-s-desc">
+										<p class="ellipsis">中心办公室装修案例</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="case-s-img">
+										<img src="./upload/case-5.png" alt="">
+									</div>
+									<div class="case-s-desc">
+										<p class="ellipsis">中心办公室装修案例</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="case-s-img">
+										<img src="./upload/case-4.png" alt="">
+									</div>
+									<div class="case-s-desc">
+										<p class="ellipsis">中心办公室装修案例</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 设计师 -->
+		<div class="section-5">
+			<div class="w">
+				<div class="sect-title clearfix">
+					<div class="l-title fl">
+						<h3>装修套餐</h3>
+						<span>Decorate a package</span>
+					</div>
+					<div class="r-title fr">
+						<span>用心做设计，他们是设计行业的佼佼者</span>
+					</div>
+				</div>
+				<div class="sect-designer">
+					<ul>
+						<li>
+							<a href="">
+								<img src="" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<script src="./js/jquery3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

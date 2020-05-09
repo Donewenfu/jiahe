@@ -103,7 +103,16 @@ $(function() {
 				});
 			}
 		});
-		
-	})
+	});
+	
+	//设计师轮播图
+	 var designStar = new Swiper ('.designStar', {
+	    loop: true, // 循环模式选项
+	    // 如果需要分页器
+	    pagination: {
+	      el: '.swiper-pagination',
+		  clickable:true
+	    }
+	  })        
 
 })

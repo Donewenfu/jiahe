@@ -1002,6 +1002,7 @@ a:hover {
 	color: #fff;
 	text-align: center;
 	margin-top: 20px;
+	max-height: 35px;
 }
 
 .section-5 .sect-designer ul li a:hover .design-mask {
@@ -1165,6 +1166,7 @@ a:hover {
 	text-align: justify;
 	line-height: 20px;
 	color: #666;
+	max-height: 60px;
 }
 
 .swiper-btn-news-prev {
@@ -2187,6 +2189,7 @@ a:hover {
 
 .designer-case ul {
 	margin-right: -27px;
+	margin-top: 40px;
 }
 
 .designer-form button {
@@ -2227,4 +2230,26 @@ a:hover {
 	box-sizing: border-box;
 	background-color: #fff;
 	margin-top: 23px;
+}
+.design-swiper{
+	margin-top: 30px;
+}
+.designStar .swiper-slide a .designer-pic img{
+	width: 234px;
+	height: 237px;
+} 
+.design-swiper .designer-info .designer-line2 ul li{
+	width: 50%;
+}
+.designStar .swiper-pagination{
+	bottom: 104px;
+}
+.designStar .swiper-pagination-bullet-active{
+	background: #fff;
+}
+.designStar .swiper-pagination-bullet{
+	background: #fff;
+}
+.designer-line3 p{
+	max-height: 16px;
 }

@@ -75,6 +75,34 @@ $(function() {
 	
 	//设计师详情页面提交表单
 	$('.yybtn').click(function(){
+		layui.use('layer', function() {
+			var $username = $('.designer-form .desinguname').val(),
+				$usertel  = $('.designer-form .designtel').val();
+			if ($username == '') {
+				layer.tips('请输入您的称呼', '.desinguname', {
+					tips: [1, '#279b6c'] //还可配置颜色
+				});
+				return
+			}
+			if ($usertel == '') {
+				layer.tips('请输入手机号', '.designtel', {
+					tips: [1, '#279b6c'] //还可配置颜色
+				});
+				return
+			}else{
+				var test = /^[1]([3-9])[0-9]{9}$/.test($usertel);
+				if(!test){
+					layer.tips('请输入正确的手机号', '.designtel', {
+						tips: [1, '#279b6c'] //还可配置颜色
+					});
+					return
+				}
+				layer.msg('感谢您的提交！', {icon: 6},function(){
+					$('.designer-form .desinguname').val('');
+					$usertel  = $('.designer-form .designtel').val('');
+				});
+			}
+		});
 		
 	})
 

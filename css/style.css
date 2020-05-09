@@ -227,13 +227,14 @@ a:hover {
 /* 字体图标 */
 
 @font-face {
-  font-family: 'iconfont';  /* project id 1800713 */
-  src: url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.eot');
-  src: url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.svg#iconfont') format('svg');
+	font-family: 'iconfont';
+	/* project id 1800713 */
+	src: url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.eot');
+	src: url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.eot?#iefix') format('embedded-opentype'),
+		url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.woff2') format('woff2'),
+		url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.woff') format('woff'),
+		url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.ttf') format('truetype'),
+		url('//at.alicdn.com/t/font_1800713_w2d2pbdme3.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -1517,7 +1518,8 @@ a:hover {
 	top: 25px;
 	cursor: pointer;
 }
-.animatedown{
+
+.animatedown {
 	transform: rotate(180deg);
 	animation: bottomUp 1s infinite;
 }
@@ -1530,71 +1532,83 @@ a:hover {
 	0% {
 		transform: rotate(180deg) translateY(-10px);
 	}
+
 	100% {
 		transform: rotate(180deg) translateY(10px);
 	}
 }
 
 /* 案例 */
-.secondbg{
+.secondbg {
 	width: 100%;
 	height: 500px;
 	position: relative;
 	overflow: hidden;
 }
-.secondbg img{
+
+.secondbg img {
 	width: 1920px;
 	height: 500px;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 }
-.top-crumbs{
+
+.top-crumbs {
 	padding: 20px 0;
 	background-color: #F3F3F3;
 }
-.casearea a{
+
+.casearea a {
 	font-size: 14px;
 }
-.xline{
+
+.xline {
 	margin: 0 5px;
 	color: #C79E68;
 }
-.keyw{
+
+.keyw {
 	color: #C79E68;
 }
 
-.case-filter-center ul li{
+.case-filter-center ul li {
 	display: flex;
 	border-bottom: 1px solid #e4e2e2;
 	/* height: 58px; */
 	/* line-height: 58px; */
 	padding: 15px 0;
 }
-.case-filter-center ul li dl dd{
+
+.case-filter-center ul li dl dd {
 	float: left;
 	margin-right: 12px;
 }
-.case-filter-center ul li dl dd a{
+
+.case-filter-center ul li dl dd a {
 	display: block;
 	padding: 6px 12px;
-	
+
 }
-.case-filter-center ul li dl dd a.on{
+
+.case-filter-center ul li dl dd a.on {
 	background-color: #E74C3C;
 	color: #fff;
 }
-.case-filter-center ul li span{
+
+.case-filter-center ul li span {
 	font-size: 14px;
 	margin-right: 40px;
 	margin-left: 20px;
 	line-height: 28px;
 }
-.caselist{
+
+.caselist {
 	margin-top: 60px;
 	padding: 60px 0;
 	background-color: #F4F4F4;
 }
+
 .caselist ul li {
 	width: 386px;
 	position: relative;
@@ -1603,66 +1617,82 @@ a:hover {
 	margin-right: 20px;
 	margin-bottom: 44px;
 }
-.caselist ul{
+
+.caselist ul {
 	margin-right: -20px;
 }
+
 .caselist ul li a {
 	display: block;
 	width: 100%;
 }
-.caselist ul li a .case-s-img{
+
+.caselist ul li a .case-s-img {
 	width: 100%;
 }
-.case-img img{
+
+.case-img img {
 	width: 100%;
 	height: 240px;
 }
-.caseinfo-info{
+
+.caseinfo-info {
 	width: 100%;
 	height: 148px;
 	background-color: #fff;
 	padding: 16px;
 	box-sizing: border-box;
 }
-.case-l-i .xmname{
+
+.case-l-i .xmname {
 	font-size: 15px;
 }
-.case-l-i .xmdesc{
+
+.case-l-i .xmdesc {
 	font-size: 13px;
 	color: #666666;
 }
-.case-l-i p{
+
+.case-l-i p {
 	line-height: 22px;
 }
-.caseinfo-top{
+
+.caseinfo-top {
 	border-bottom: 1px solid #d8d8d8;
 	padding-bottom: 10px;
 }
-.case-r-icon i{
+
+.case-r-icon i {
 	font-size: 23px;
 	line-height: 40px;
 }
-.caseinfo-bot .case-info-d-img{
+
+.caseinfo-bot .case-info-d-img {
 	margin-top: 15px;
 }
-.caseinfo-bot .case-info-d-img img{
+
+.caseinfo-bot .case-info-d-img img {
 	width: 47px;
 	height: 47px;
 	border-radius: 5px;
 }
+
 .case-d-r-ingo {
 	margin-left: 10px;
 }
-.case-design-name{
+
+.case-design-name {
 	font-size: 14px;
 	margin-top: 4px;
 }
-.case-design-post{
+
+.case-design-post {
 	font-size: 13px;
 	color: #575757;
 	margin-top: 10px;
 }
-.case-design-gt a{
+
+.case-design-gt a {
 	box-sizing: border-box;
 	display: inline-block;
 	padding: 0;
@@ -1675,124 +1705,153 @@ a:hover {
 	font-size: 13px;
 	color: #fff;
 }
-.case-design-gt{
+
+.case-design-gt {
 	position: absolute;
 	right: 15px;
 	bottom: 20px;
 }
-.caselist ul li:hover{
+
+.caselist ul li:hover {
 	box-shadow: 0px 0px 15px #ccc;
 	transform: translateY(-10px);
 }
-.indexlink{
+
+.indexlink {
 	margin-left: 20px;
 }
-.pagenum{
+
+.pagenum {
 	margin-top: 20px;
 }
-.inner-pagenum{
+
+.inner-pagenum {
 	display: inline-block;
 	border: 1px solid #ccc;
 }
-.pagenum{
+
+.pagenum {
 	display: flex;
 	justify-content: center;
 }
-.pagenum .pageitem,.nextpage{
+
+.pagenum .pageitem,
+.nextpage {
 	float: left;
 	display: block;
 	padding: 12px 16px;
-	
+
 	font-size: 13px;
 	color: #999999;
 	border-right: 1px solid #ccc;
 }
-.inner-pagenum a.pageon{
+
+.inner-pagenum a.pageon {
 	background-color: #C79E68;
 	color: #fff;
 }
-.nextpage{
+
+.nextpage {
 	border-right: none;
 }
-.casecontent{
+
+.casecontent {
 	padding: 47px 0;
 	background-color: #F3F3F3;
 }
+
 /* 案例详情页 */
-.casedetail-l{
+.casedetail-l {
 	width: 911px;
 	padding: 28px;
 	background-color: #fff;
 	box-sizing: border-box;
 	/* padding-bottom: 80px; */
 }
-.casecontent{
+
+.casecontent {
 	margin-bottom: 40px;
 }
-.casedetail-r{
+
+.casedetail-r {
 	width: 271px;
 	box-sizing: border-box;
 }
-.case-detail-title p{
+
+.case-detail-title p {
 	text-align: center;
 	font-size: 21px;
 	font-weight: bold;
 }
-.socialmediaicon ul li{
+
+.socialmediaicon ul li {
 	float: left;
 	vertical-align: middle;
 	margin-right: 10px;
 }
-.socialmediaicon ul li a{
+
+.socialmediaicon ul li a {
 	vertical-align: middle;
 	font-size: 24px;
 	display: inline-block;
 	transition: all .3s;
 }
-.socialmediaicon ul li a:hover{
+
+.socialmediaicon ul li a:hover {
 	transform: translateY(-4px);
 }
-.socialmediaicon ul li a.weibo{
+
+.socialmediaicon ul li a.weibo {
 	color: #DF4D69;
 }
-.socialmediaicon ul li a.wechat{
+
+.socialmediaicon ul li a.wechat {
 	color: #EECF3D;
 }
-.socialmediaicon ul li a.qqspace{
+
+.socialmediaicon ul li a.qqspace {
 	color: #3EB135;
 }
-.publish-info{
+
+.publish-info {
 	display: flex;
 	justify-content: center;
 	margin-top: 15px;
 }
-.publish-info span{
+
+.publish-info span {
 	font-size: 13px;
 	color: #989A99;
 	vertical-align: middle;
 	line-height: 24px;
 }
-.publish-info span:nth-child(2){
+
+.publish-info span:nth-child(2) {
 	margin-right: 20px;
 }
-.case-detail-content{
+
+.case-detail-content {
 	margin-top: 30px;
 }
-.case-detail-content p{
+
+.case-detail-content p {
 	font-size: 14px;
 	line-height: 23px;
 	color: #333;
 	margin-bottom: 20px;
 }
-.case-detail-content img{
+
+.case-detail-content img {
 	display: block;
 	margin-top: 20px;
 	width: 100%;
 }
-.case-detail-right-title p{
+
+.case-detail-right-title p {
 	font-size: 18px;
 }
-.case-detail-right-title p::after{
+
+.case-detail-right-title p::after {
 	content: '';
 	display: block;
 	width: 46px;
@@ -1800,31 +1859,39 @@ a:hover {
 	background-color: #D1D1D1;
 	margin-top: 10px;
 }
-.publish-info span.p-bianji{
+
+.publish-info span.p-bianji {
 	margin-left: 10px;
 }
-.case-detail-designer{
+
+.case-detail-designer {
 	margin-top: 20px;
 }
-.case-detail-right-list{
+
+.case-detail-right-list {
 	margin-top: 15px;
 }
-.case-detail-right-list ul li{
+
+.case-detail-right-list ul li {
 	width: 50%;
 	float: left;
 	margin-bottom: 20px;
 }
-.case-detail-right-list ul li span{
+
+.case-detail-right-list ul li span {
 	font-size: 13px;
 	color: #003336;
 }
-.case-detail-right-list ul li span.case-right-second-title{
+
+.case-detail-right-list ul li span.case-right-second-title {
 	color: #C79E68;
 }
-.case-detail-designer-btn{
+
+.case-detail-designer-btn {
 	/* margin-top: 15px; */
 }
-.case-detail-designer-btn a{
+
+.case-detail-designer-btn a {
 	display: block;
 	width: 100px;
 	height: 30px;
@@ -1834,52 +1901,65 @@ a:hover {
 	font-size: 12px;
 	margin-top: 8px;
 }
-.case-detail-d-l-img img{
+
+.case-detail-d-l-img img {
 	width: 115px;
 	height: 115px;
 }
-.case-detai-designer-info{
+
+.case-detai-designer-info {
 	margin-top: 20px;
 }
-.case-detail-design-name span{
+
+.case-detail-design-name span {
 	font-size: 15px;
 }
-.case-detail-yuyue{
+
+.case-detail-yuyue {
 	margin-top: 5px;
 	font-size: 13px;
 }
-.case-detail-yuyue .yuyuenum{
+
+.case-detail-yuyue .yuyuenum {
 	color: #C79E68;
 }
-.case-detail-right{
+
+.case-detail-right {
 	padding: 14px;
 	box-sizing: border-box;
 	background-color: #fff;
 }
-.case-detail-right-tj{
+
+.case-detail-right-tj {
 	padding: 14px;
 	box-sizing: border-box;
 	background-color: #fff;
 	margin-top: 20px;
 }
-.case-detail-right-tj ul li .case-detail-left-tj-img img{
+
+.case-detail-right-tj ul li .case-detail-left-tj-img img {
 	width: 101px;
 	height: 66px;
 }
-.case-detail-right-tj ul li{
+
+.case-detail-right-tj ul li {
 	margin-bottom: 20px;
 }
-.case-detail-right-tj ul li:last-child{
+
+.case-detail-right-tj ul li:last-child {
 	margin-bottom: 0;
 }
-.case-detail-right-info{
+
+.case-detail-right-info {
 	margin-left: 10px;
 	color: #333;
 }
-.case-detail-right-info p{
+
+.case-detail-right-info p {
 	height: 27px;
 }
-.case-detail-right-info a{
+
+.case-detail-right-info a {
 	float: right;
 	display: block;
 	width: 69px;
@@ -1890,96 +1970,119 @@ a:hover {
 	color: #fff;
 	margin-top: 14px;
 }
-.case-detail-right-info{
+
+.case-detail-right-info {
 	width: 125px;
 }
+
 /* 设计师页面 */
-.designer{
+.designer {
 	margin-top: 80px;
 }
-.designer-info{
+
+.designer-info {
 	padding: 12px;
 	background-color: #f5f5f5;
 }
-.designer ul{
+
+.designer ul {
 	margin-right: -20px;
 }
-.designer ul li{
+
+.designer ul li {
 	width: 285px;
 	float: left;
 	margin-right: 20px;
 }
-.designer ul li a{
+
+.designer ul li a {
 	display: block;
 	width: 100%;
 }
-.designer-pic img{
+
+.designer-pic img {
 	width: 100%;
 	height: 288px;
 }
-.designer-info .designer-line1{
+
+.designer-info .designer-line1 {
 	margin-bottom: 10px;
 }
-.designer-info .designer-line1 .design-list-name{
+
+.designer-info .designer-line1 .design-list-name {
 	font-size: 16px;
 	color: #333;
 }
-.designer-info .designer-line1 .design-list-post{
+
+.designer-info .designer-line1 .design-list-post {
 	font-size: 14px;
 	color: #333;
 	margin-left: 23px;
 }
-.designer-info .designer-line2{
+
+.designer-info .designer-line2 {
 	margin-bottom: 10px;
 }
-.designer-info .designer-line2 ul li{
+
+.designer-info .designer-line2 ul li {
 	width: 42%;
 	float: left;
 }
-.designer-info .designer-line2 ul li{
+
+.designer-info .designer-line2 ul li {
 	font-size: 14px;
 }
-.designer-info .designer-line2 ul li span.design-list-title{
+
+.designer-info .designer-line2 ul li span.design-list-title {
 	color: #666;
 }
-.designer-line3 span{
+
+.designer-line3 span {
 	float: left;
 	font-size: 14px;
 	display: block;
 	vertical-align: middle;
 	color: #666;
 }
-.designer-line3 p{
+
+.designer-line3 p {
 	font-size: 14px;
 	vertical-align: middle;
 	color: #666;
 }
-.designer-item{
-	
+
+.designer-item {
+
 	margin-bottom: 40px;
 	transition: all .3s;
 }
-.designer-item:hover{
+
+.designer-item:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 0 15px #ccc;
 }
-.designer-pic-info-d{
+
+.designer-pic-info-d {
 	margin-left: 37px;
 }
-.designer-pic-d .designimg{
+
+.designer-pic-d .designimg {
 	width: 271px;
 	height: 271px;
 	border-radius: 7px;
 }
-.designer-pic-info-d .designer-d-name{
+
+.designer-pic-info-d .designer-d-name {
 	font-size: 22px;
 }
-.designer-pic-info-d .designer-d-job{
+
+.designer-pic-info-d .designer-d-job {
 	font-size: 13px;
 	color: #666;
 	line-height: 38px;
 }
-.designer-pic-info-d .designer-find-him a{
+
+.designer-pic-info-d .designer-find-him a {
 	border: 1px solid #FF0000;
 	display: block;
 	height: 40px;
@@ -1987,36 +2090,44 @@ a:hover {
 	text-align: center;
 	line-height: 40px;
 	font-size: 15px;
-	color:#FF0000;
+	color: #FF0000;
 	margin-top: 25px;
-	
+
 }
-.designer-info-list{
+
+.designer-info-list {
 	margin-top: 70px;
 }
-.designer-info-list ul li{
+
+.designer-info-list ul li {
 	margin-top: 10px;
 }
-.designer-info-list ul li span{
+
+.designer-info-list ul li span {
 	font-size: 13px;
 	color: #666;
 }
-.designer-info-list ul li img{
+
+.designer-info-list ul li img {
 	width: 16px;
 	margin-right: 8px;
 }
-.designer-pic-d{
+
+.designer-pic-d {
 	border-bottom: 1px dashed #ccc;
 	padding-bottom: 30px;
 }
-.designer-production{
+
+.designer-production {
 	margin-top: 30px;
 }
-.left-line-title p{
+
+.left-line-title p {
 	display: inline-block;
 	font-size: 16px;
 }
-.left-line-title p::before{
+
+.left-line-title p::before {
 	content: '';
 	display: inline-block;
 	width: 4px;
@@ -2027,67 +2138,93 @@ a:hover {
 	top: 4px;
 	margin-right: 10px;
 }
+
 .left-line-title span {
 	font-size: 13px;
 	color: #A9A9A9;
 	margin-left: 10px;
 }
-.designer-case ul li{
+
+.designer-case ul li {
 	width: 274px;
 	transition: all .3s;
 }
-.designer-case ul li a{
+
+.designer-case ul li a {
 	display: block;
 	width: 100%;
 }
+
 .designer-case {
 	margin-top: 20px;
 }
-.designer-case ul li a .designer-case-img img{
+
+.designer-case ul li a .designer-case-img img {
 	width: 100%;
 	height: 170px;
 }
-.designer-caseinfo-info{
+
+.designer-caseinfo-info {
 	background-color: #F5F5F5;
 	padding: 12px;
 }
-.designer-case-l-i p{
+
+.designer-case-l-i p {
 	font-size: 13px;
 	line-height: 20px;
 }
-.designer-case ul li:hover{
+
+.designer-case ul li:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 0 12px #ccc;
 }
-.designer-case ul li{
+
+.designer-case ul li {
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 30px;
 }
 
-.designer-case ul{
+.designer-case ul {
 	margin-right: -27px;
 }
-.designer-form button{
+
+.designer-form button {
 	background-color: #E74C3C;
 	width: 100%;
 }
-.designer-form{
+
+.designer-form {
 	padding: 14px;
-	    box-sizing: border-box;
-	    background-color: #fff;
+	box-sizing: border-box;
+	background-color: #fff;
 }
-.designer-form h3{
+
+.designer-form h3 {
 	font-size: 18px;
-	font-weight:normal;
+	font-weight: normal;
 	text-align: center;
 	margin-bottom: 20px;
 	margin-top: 10px;
+	color: #E74C3C;
 }
-.design-item-tel p{
+
+.design-item-tel p {
 	font-size: 13px;
 	text-align: center;
 }
-.design-item-tel .designer-tel{
+
+.design-item-tel .designer-tel {
 	color: #E74C3C;
+}
+
+.designer-form .red-word {
+	color: #333;
+}
+
+.designer-recommend {
+	padding: 14px;
+	box-sizing: border-box;
+	background-color: #fff;
+	margin-top: 23px;
 }

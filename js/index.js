@@ -22,8 +22,8 @@ layui.use('form', function() {
 	});
 });
 
+
 $(function() {
-	
 	//价格随机数
 	function numrandom() {
 		var numRandom = Math.floor(Math.random() * (10 - 1) + 1);
@@ -42,9 +42,9 @@ $(function() {
 			//人工费
 			$('.jzys-03 .price-02').html(cljg[numrandom()]);
 			//管理费
-			$('.jzys-04 .price-02').html(cljg[numrandom()]);
+			$('.jzys-04 .price-02').html(gljg[numrandom()]);
 			//管理费
-			$('.jzys-05 .price-02').html(cljg[numrandom()]);
+			$('.jzys-05 .price-02').html(gljg[numrandom()]);
 		}, 180)
 	}
 	jgrandom()
@@ -59,8 +59,28 @@ $(function() {
 	      nextEl: '.swiper-button-next',
 	      prevEl: '.swiper-button-prev',
 	    },
-	  })        
-	
+	  });
+		  
+	  //新闻轮播图
+	   var newsSwiper = new Swiper ('.swiper-news', {
+	      loop: true, 
+	      pagination: {
+	        el: '.swiper-pagination',
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      }
+	    })   
+			 
+		//装修百科
+		var zxbkSwiper = new Swiper ('.zxbk-swiper-c', {
+	      loop: true,
+	      pagination: {
+	        el: '.swiper-pagination',
+			clickable :true,
+	      },
+	    }) 
 })
 
 

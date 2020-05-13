@@ -1345,6 +1345,7 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+
 /* 页尾 */
 .footer {
 	padding: 50px 0;
@@ -1355,6 +1356,7 @@ a:hover {
 	padding: 20px 0;
 	background-color: #1C1C1C;
 	text-align: center;
+	/* margin-bottom: 83px; */
 }
 
 .footer-copyright a {
@@ -2315,4 +2317,81 @@ a:hover {
 	font-size: 14px;
 	color: #333;
 	margin-top: 30px;
+}
+
+/* 联系我们 */
+.contact-list ul li{
+	width: 272px;
+	/* height: 206px; */
+	/* background-color: orange; */
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+}
+.city-img-bg{
+	width: 100%;
+	height: 100%;
+	height: 206px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	position: relative;
+}
+.city-p-name-el{
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	background-color: #E74C3C;
+	position: absolute;
+	top: 170px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	line-height: 66px;
+	font-size: 14px;
+	color: #fff;
+}
+.contact-list ul {
+	margin-top: 70px;
+}
+.city-bottom-info{
+	width: 100%;
+	height: 208px;
+	/* background-color: orange; */
+	border: 1px solid #ccc;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	text-align: center;
+}
+.city-p-name-el {
+	word-wrap: break-word;
+}
+.company-name{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.company-add{
+	margin-top: 20px;
+}
+.company-name{
+	margin-top: 50px;
+}
+.company-add{
+	text-align: left;
+	line-height: 20px;
+}
+.contact-list ul li{
+	float: left;
+	margin-right: 37px;
+	margin-bottom: 37px;
+}
+.contact-list ul{
+	margin-right: -37px;
+}
+.yxym-content img{
+	width: 100%;
+}
+.yxybg img{
+	height: 620px !important;
 }

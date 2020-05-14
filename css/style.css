@@ -218,6 +218,42 @@ a:hover {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+/* 浏览器 滚动条 */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-button:vertical {
+	display: none
+}
+
+::-webkit-scrollbar-track:vertical {
+	background-color: black
+}
+
+::-webkit-scrollbar-track-piece {
+	background: #E3E3E3
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #555;
+	border-radius: 30px
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+	background-color: #3B3B3B
+}
+
+::-webkit-scrollbar-corner:vertical {
+	background-color: #535353
+}
+
+::-webkit-scrollbar-resizer:vertical {
+	background-color: #FF6E00
+}
+
+
 
 .w {
 	width: 1200px;
@@ -2394,4 +2430,49 @@ a:hover {
 }
 .yxybg img{
 	height: 620px !important;
+}
+
+/* 关于我们 */
+
+.about-line1 ul li{
+	float: left;
+	margin-right: 22px;
+}
+
+.about-line1 ul li:last-child{
+	margin-right: 0;
+}
+
+.about-content{
+	width: 100%;
+	padding: 58px 0;
+	background-color: #e7e8ed;
+}
+.about-info{
+	width: 100%;
+	height: 817px;
+	background: url(../images/03.jpg) no-repeat center center;
+}
+.about-info-content{
+	position: relative;
+}
+.company-info{
+	width: 437px;
+	height: 372px;
+	position: absolute;
+	left: 685px;
+	top: 369px;
+	font-size: 15px;
+	/* padding: 20px; */
+	box-sizing: border-box;
+	line-height: 24px;
+	overflow-y: scroll;
+}
+.company-info p{
+	margin-bottom: 15px;
+}
+.about-six{
+	width: 100%;
+	height: 647px;
+	background: url(../images/04.jpg) no-repeat center center;
 }
